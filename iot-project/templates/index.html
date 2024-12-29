@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard - Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container index-container">
+        <h1>IoT Dashboard</h1>
+	<h2>Last consult's data</h2>
+        <p><strong>Date and time:</strong> {{ current_time }}</p>
+        <p><strong>Temperature:</strong> {{ current_temp }} °C</p>
+        <p><strong>Humidity:</strong> {{ current_humidity }} %</p>
+        <h2>To show the graphs, click in the link below:</h2>
+        <a href="{{ url_for('graphs') }}" class="button">View Graphs</a>
+    </div>
+</body>
+</html>

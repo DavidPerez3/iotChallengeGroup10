@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Graphs</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>IoT Graphs</h1>
+    <div id="temp-graph"></div>
+    <div id="hum-graph"></div>
+    <script>
+        var tempGraph = {{ temp_graph | safe }};
+        Plotly.newPlot('temp-graph', tempGraph.data, tempGraph.layout);
+        var humGraph = {{ hum_graph | safe }};
+        Plotly.newPlot('hum-graph', humGraph.data, humGraph.layout);
+    </script>
+    <p><a href="{{ url_for('index') }}">Return to current data</a></p>
+</body>
+</html>
