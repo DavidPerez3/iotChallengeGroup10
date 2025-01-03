@@ -1,7 +1,7 @@
 # IoT Project: Group 10
 
 ## Project Description
-This repository contains the implementation of our IoT project for the course "Internet of Things." Our project focuses on creating a system that integrates sensors, data processing, and visualization to provide innovative solutions for monitoring and managing environmental data effectively. This project consists of a simulation of a medical consult to an elderly pacient, who lives alone in his house.
+This repository contains the implementation of our IoT project for the course "Internet of Things." Our project focuses on creating a system that integrates sensors, data processing, and visualization to provide innovative solutions for monitoring and managing environmental data effectively. This project consists of a simulation of a medical consult with an elderly patient, who lives alone in his house.
 
 ### Objectives
 1. Develop a functional IoT solution integrating multiple components.
@@ -60,16 +60,16 @@ The system architecture includes sensor data acquisition, data processing via Ra
 
 4. Configure your sensors and actuators pins inside the medicalConsult.py file.
 
-5. Run InfluxDB (in another terminal), make sure you are running this command where your influxd.exe file is located.
+5. Run InfluxDB (in another terminal); make sure you are running this command where your influxd.exe file is located.
    ```bash
    influxd.exe
    ```
 
-6. Access to localhost:8086, where influxdb host is running, create your own bucket.
+6. Access localhost:8086, where the InfluxDB host is running, and create your own bucket.
 
-7. Configure your InfluxDB token, url and bucket name inside the medicalConsult.py file.
+7. Configure your InfluxDB token, URL and bucket name inside the medicalConsult.py file.
 
-8. Execute file, medicalConsult.py, and follow the screen instructions:
+8. Execute the file, medicalConsult.py, and follow the screen instructions:
    ```bash
    python3 medicalConsult.py
    ```
@@ -81,7 +81,7 @@ The system architecture includes sensor data acquisition, data processing via Ra
    ```
 
 ## Usage
-1. Access the web dashboard by navigating to `http://<your-raspberry-pi-ip>:<port>` in a browser.
+1. Access the web dashboard by navigating to it in `http://<your-raspberry-pi-ip>:<port>` in a browser.
 2. Monitor real-time sensor data.
 3. Review historical data and insights on the Flask dashboard.
 
